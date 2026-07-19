@@ -1,6 +1,7 @@
 # GeckoVim
 <p align="center">
-  <img src="Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
+  <img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
+  <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="200"/>
 </p>
 
 A simple vim distribution for programmers.

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="100mm"
+   viewBox="0 0 400 100"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="GeckoSign.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#0d1117"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.35464956"
+     inkscape:cx="531.51059"
+     inkscape:cy="162.13188"
+     inkscape:window-width="1536"
+     inkscape:window-height="789"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path4"
+       style="fill:#f9f9f9;stroke-width:0.229982;stroke:#ffffff"
+       d="M 128.84663,23.665488 103.84661,48.665512 128.84663,73.665528 142.53262,59.97955 V 54.979339 L 128.84663,68.665325 108.84682,48.665512 128.84663,28.665699 142.53262,42.351686 V 37.351474 Z" />
+    <path
+       id="path3-1"
+       style="fill:#ffdd55;stroke-width:0.229982;stroke:#ffffff"
+       d="m 210.73944,24.580205 -25.00003,25.000024 25.00003,25.000003 25.00002,-25.000003 z m 0,5.000212 19.99981,19.999812 -19.99981,19.999813 -19.99981,-19.999813 z" />
+    <g
+       id="g7"
+       transform="matrix(0.83186338,0,0,1.0016972,-3.0375303,48.371321)" />
+    <g
+       id="g9"
+       transform="translate(6.8431828,-87.031065)"
+       style="stroke-width:3.4;stroke-dasharray:none;fill:none;stroke:#ffffff">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3.4;stroke-dasharray:none"
+         d="m 155.23738,112.27926 -12.17184,45.42592"
+         id="path8" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3.4;stroke-dasharray:none"
+         d="m 175.65752,117.66543 -24.43287,14.17479 23.50032,24.05985"
+         id="path9" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+       d="m 261.7131,24.08249 13.50061,50.384943 25.39481,-43.985124"
+       id="path10" />
+    <g
+       id="g18"
+       transform="translate(-2.1166667,0.36530397)"
+       style="fill:none;stroke:#ffffff">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+         d="m 319.90434,29.095623 h 32.45282"
+         id="path11" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+         d="m 310.81155,72.79761 h 32.45282"
+         id="path11-6" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+         d="M 327.17824,72.832311 338.94617,28.91387"
+         id="path12" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+       d="m 356.29479,74.74555 12.66076,-47.21403 7.69181,28.706225 15.06662,-26.096172 v 46.186571"
+       id="path13" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3.90001;stroke-dasharray:none"
+       d="m 30.318314,22.78374 -0.0096,0.01249 L 8.2938922,51.402302 21.877816,67.228234 H 40.868934 L 51.155791,53.248659 h -20.44183"
+       id="path14"
+       sodipodi:nodetypes="ccccccc" />
+    <g
+       id="g22"
+       style="stroke-width:3;stroke-dasharray:none;fill:none;stroke:#ffffff">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3;stroke-dasharray:none"
+         d="M 74.909412,25.849023 63.221046,69.470597 h 28.04183"
+         id="path20" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3;stroke-dasharray:none"
+         d="m 69.065229,47.659811 22.197645,0.07412"
+         id="path21" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3;stroke-dasharray:none"
+         d="M 73.710024,26.815241 94.327591,25.816882"
+         id="path22"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>
