@@ -30,16 +30,7 @@ tnoremap <C-S-Up>    <C-w>:resize +5<CR>
 tnoremap <C-S-Down>  <C-w>:resize -5<CR>
 
 " --- netrw like nerdtree ---
-nmap <Leader>e :Lexplore<CR>
-
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_special_syntax = 1
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-let g:netrw_hide = 1
-let g:netrw_keepdir = 0
+nmap <Leader>e :Explore<CR>
 
 " Backspace improved
 vnoremap <BS> "_d
@@ -88,6 +79,7 @@ augroup END
 " Buffers
 nnoremap <Leader>] :bnext<CR>
 nnoremap <Leader>[ :bprevious<CR>
+nnoremap <Leader>bl :buffers<CR>
 nnoremap <Leader>bd :bdelete<CR>
 
 " Tabs

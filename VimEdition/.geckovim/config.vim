@@ -47,13 +47,13 @@ let &t_SR = "\e[4 q"   " Replace => subrayado
 let mapleader=" "
 
 " Plugin config
-so ~/.vim/plugin-config.vim
+so ~/.geckovim/plugin-config.vim
 
 " Plugins
-so ~/.vim/plugins.vim
+so ~/.geckovim/plugins.vim
 
 " Maps
-so ~/.vim/maps.vim
+so ~/.geckovim/maps.vim
 
 " Theme
 set background=dark
