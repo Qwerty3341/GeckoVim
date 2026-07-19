@@ -5,7 +5,15 @@
   <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
 </p>
 
+
 A simple vim distribution for programmers.
+
+---
+## Why GeckoVim?
+
+Gecko Vim follows the **KISS** (Keep It Simple, Stupid) philosophy. It provides a clean configuration with the essential functionality you expect from a modern code editor.
+
+Once Gecko Vim is installed, I invite you to customize it however you like. Add plugins, remove features, remap keys, or adapt it to your workflow. Gecko Vim is designed to be a starting point, not a limitation.
 
 ---
 
