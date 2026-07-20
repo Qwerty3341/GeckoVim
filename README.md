@@ -106,7 +106,20 @@ sudo dnf install golang make
 
 #### 1. Clone and install
 
+> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+
 ```bash
+# HTTP
+git clone https://github.com/qwerty3341/geckovim.git \
+  && mv geckovim/.geckovim ~/ \
+  && ln -sf ~/.geckovim/config.vim ~/.vimrc \
+  && rm -rf geckovim
+
+# SSH
+git clone git@github.com:Qwerty3341/GeckoVim.git \
+  && mv GeckoVim/.geckovim ~/ \
+  && ln -sf ~/.geckovim/config.vim ~/.vimrc \
+  && rm -rf GeckoVim
 ```
 
 #### 2. Install plugins
@@ -144,12 +157,24 @@ A lightweight version of GeckoVim focus on secondary editor or server administra
 
 2. Copy the configuration
 
+> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+
 ```bash
+#Http
+git clone https://github.com/qwerty3341/geckovim.git \
+  && cp geckovim/SlimGecko/config.vim ~/.vimrc \
+  && rm -rf geckovim
+
+#ssh
+git clone https://github.com/qwerty3341/geckovim.git \
+  && cp geckovim/SlimGecko/config.vim ~/.vimrc \
+  && rm -rf geckovim
 ```
+
 ---
 
 ## Neovim Edition
 
 > Coming soon.
 
-A Neovim-native version of GeckoVim using Lua configurations.
+A Neovim-native version of GeckoVim.
