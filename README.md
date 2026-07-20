@@ -1,9 +1,9 @@
 # GeckoVim
-<p align="center" style="background-color: #000000; padding: 20px;">
+<div style="background-color: #000000; padding: 20px; text-align: center;">
   <img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
-    <br>
+  <br>
   <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
-</p>
+</div>
 
 
 A simple vim distribution for programmers.
@@ -168,7 +168,9 @@ A lightweight version of GeckoVim focus on secondary editor or server administra
 git clone https://github.com/qwerty3341/geckovim.git \
     && cp geckovim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf geckovim
+```
 
+```bash
 ### SSH
 git clone git@github.com:Qwerty3341/GeckoVim.git \
     && cp GeckoVim/SlimGecko/config.vim ~/.vimrc \
