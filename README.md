@@ -49,15 +49,15 @@ Install the plugin manager:
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-         ```
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
-         > More info: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+> More info: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 
 #### 3. Nerdfont 
-         Download a nerdfont to get icons for vim-devicons plugin in vim
-         Go to the link
-         [https://www.nerdfonts.com/](https://www.nerdfonts.com/)
+Download a nerdfont to get icons for vim-devicons plugin in vim
+Go to the link
+[https://www.nerdfonts.com/](https://www.nerdfonts.com/)
 
 #### 4. Node.js
 
@@ -115,17 +115,17 @@ sudo dnf install golang make
 ```bash
 # HTTP
 git clone https://github.com/qwerty3341/geckovim.git \
-        && mv geckovim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
-        && rm -rf geckovim \
-        && ln -sf ~/.vim/config.vim ~/.vimrc
+&& mv geckovim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
+&& rm -rf geckovim \
+&& ln -sf ~/.vim/config.vim ~/.vimrc
 ```
 
 ```bash
 # SSH
-    git clone git@github.com:Qwerty3341/GeckoVim.git \
-        && mv GeckoVim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
-        && rm -rf GeckoVim \
-        && ln -sf ~/.vim/config.vim ~/.vimrc
+git clone git@github.com:Qwerty3341/GeckoVim.git \
+&& mv GeckoVim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
+&& rm -rf GeckoVim \
+&& ln -sf ~/.vim/config.vim ~/.vimrc
 ```
 
 #### 2. Install plugins
@@ -146,26 +146,26 @@ A lightweight version of GeckoVim focus on secondary editor or server administra
 
 1. Download vim (The version you want)
 
-    **Debian / Ubuntu**
-    ```bash
-    sudo apt update && sudo apt install vim-gtk3
-    ```
+**Debian / Ubuntu**
+```bash
+sudo apt update && sudo apt install vim-gtk3
+```
 
-    **Arch Linux**
-    ```bash
-    sudo pacman -S gvim
-    ```
+**Arch Linux**
+```bash
+sudo pacman -S gvim
+```
 
-    **Fedora**
-    ```bash
-    sudo dnf install vim-enhanced
-    ```
+**Fedora**
+```bash
+sudo dnf install vim-enhanced
+```
 
-    2. Copy the configuration
+2. Copy the configuration
 
-    > **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
 
-    ```bash
+```bash
 ### HTTP
 ```bash
 git clone https://github.com/qwerty3341/geckovim.git \
@@ -180,7 +180,7 @@ git clone git@github.com:Qwerty3341/GeckoVim.git \
     && rm -rf GeckoVim
 ```
 
-    ---
+---
 
 
 ## Neovim Edition
