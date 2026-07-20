@@ -1,5 +1,5 @@
 # GeckoVim
-<p align="center">
+<p align="center" style="background-color">
   <img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
     <br>
   <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
@@ -70,10 +70,14 @@ Or using your package manager:
 ```bash
 # Debian / Ubuntu
 sudo apt install nodejs npm
+```
 
+```bash
 # Arch Linux
 sudo pacman -S nodejs npm
+```
 
+```bash
 # Fedora
 sudo dnf install nodejs npm
 ```
@@ -111,15 +115,15 @@ sudo dnf install golang make
 ```bash
 # HTTP
 git clone https://github.com/qwerty3341/geckovim.git \
-  && mv geckovim/.geckovim ~/ \
-  && ln -sf ~/.geckovim/config.vim ~/.vimrc \
-  && rm -rf geckovim
+    && mv geckovim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
+    && rm -rf geckovim \
+    && ln -sf ~/.vim/config.vim ~/.vimrc
 
 # SSH
 git clone git@github.com:Qwerty3341/GeckoVim.git \
-  && mv GeckoVim/.geckovim ~/ \
-  && ln -sf ~/.geckovim/config.vim ~/.vimrc \
-  && rm -rf GeckoVim
+    && mv GeckoVim/VimEdition/{config,maps,plugin-config,plugins}.vim ~/.vim/ \
+    && rm -rf GeckoVim \
+    && ln -sf ~/.vim/config.vim ~/.vimrc
 ```
 
 #### 2. Install plugins
@@ -138,37 +142,37 @@ A lightweight version of GeckoVim focus on secondary editor or server administra
 
 ### Installation
 
-1. Download vim (Highly recommended gvim)
+1. Download vim (The version you want)
 
-    **Debian / Ubuntu**
-    ```bash
-    sudo apt update && sudo apt install vim-gtk3
-    ```
+                                 **Debian / Ubuntu**
+                                 ```bash
+                                 sudo apt update && sudo apt install vim-gtk3
+                                 ```
 
-    **Arch Linux**
-    ```bash
-    sudo pacman -S gvim
-    ```
+                                 **Arch Linux**
+                                 ```bash
+                                 sudo pacman -S gvim
+                                 ```
 
-    **Fedora**
-    ```bash
-    sudo dnf install vim-enhanced
-    ```
+                                 **Fedora**
+                                 ```bash
+                                 sudo dnf install vim-enhanced
+                                 ```
 
-2. Copy the configuration
+                                 2. Copy the configuration
 
-> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+                                 > **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
 
-```bash
-#Http
+                                 ```bash
+# HTTP
 git clone https://github.com/qwerty3341/geckovim.git \
-  && cp geckovim/SlimGecko/config.vim ~/.vimrc \
-  && rm -rf geckovim
+    && cp geckovim/SlimGecko/config.vim ~/.vimrc \
+    && rm -rf geckovim
 
-#ssh
-git clone https://github.com/qwerty3341/geckovim.git \
-  && cp geckovim/SlimGecko/config.vim ~/.vimrc \
-  && rm -rf geckovim
+# SSH
+git clone git@github.com:Qwerty3341/GeckoVim.git \
+    && cp GeckoVim/SlimGecko/config.vim ~/.vimrc \
+    && rm -rf GeckoVim
 ```
 
 ---
