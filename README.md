@@ -1,5 +1,5 @@
 # GeckoVim
-<p align="center" style="background-color">
+<p align="center" style="background-color: #000000; padding: 20px;">
   <img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
     <br>
   <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
@@ -144,38 +144,39 @@ A lightweight version of GeckoVim focus on secondary editor or server administra
 
 1. Download vim (The version you want)
 
-                                 **Debian / Ubuntu**
-                                 ```bash
-                                 sudo apt update && sudo apt install vim-gtk3
-                                 ```
+ **Debian / Ubuntu**
+ ```bash
+ sudo apt update && sudo apt install vim-gtk3
+ ```
 
-                                 **Arch Linux**
-                                 ```bash
-                                 sudo pacman -S gvim
-                                 ```
+ **Arch Linux**
+ ```bash
+ sudo pacman -S gvim
+ ```
 
-                                 **Fedora**
-                                 ```bash
-                                 sudo dnf install vim-enhanced
-                                 ```
+ **Fedora**
+ ```bash
+ sudo dnf install vim-enhanced
+ ```
 
-                                 2. Copy the configuration
+ 2. Copy the configuration
 
-                                 > **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+ > **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
 
-                                 ```bash
-# HTTP
+ ```bash
+### HTTP
 git clone https://github.com/qwerty3341/geckovim.git \
     && cp geckovim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf geckovim
 
-# SSH
+### SSH
 git clone git@github.com:Qwerty3341/GeckoVim.git \
     && cp GeckoVim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf GeckoVim
 ```
 
 ---
+
 
 ## Neovim Edition
 
