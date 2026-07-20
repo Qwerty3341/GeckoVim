@@ -167,7 +167,6 @@ sudo dnf install vim-enhanced
 
 ```bash
 ### HTTP
-```bash
 git clone https://github.com/qwerty3341/geckovim.git \
     && cp geckovim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf geckovim
