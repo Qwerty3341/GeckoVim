@@ -1,5 +1,5 @@
 # GeckoVim
-<div style="background-color: #000000; padding: 20px; text-align: center;">
+<div align="center" style="background-color: #000000; padding: 20px;">
   <img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
   <br>
   <img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
@@ -11,7 +11,7 @@ A simple vim distribution for programmers.
 ---
 ## Why GeckoVim?
 
-Gecko Vim follows the **KISS** (Keep It Simple, Stupid) philosophy. It provides a clean configuration with the essential functionality you expect from a modern code editor.
+Gecko Vim follows the **KISS** (Keep It Simple, Stupid) principle. It provides a clean configuration with the essential functionality you expect from a modern code editor.
 
 Once Gecko Vim is installed, I invite you to customize it however you like. Add plugins, remove features, remap keys, or adapt it to your workflow. Gecko Vim is designed to be a starting point, not a limitation.
 
