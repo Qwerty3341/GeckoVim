@@ -1,8 +1,8 @@
 # GeckoVim
 <div align="center" style="background-color: #000000; padding: 20px;">
-<img src="img/Gecko_Vim_Logo.svg" alt="GeckoVim Logo" width="200"/>
+<img src="img/Gecko_Vim_Logo.webp" alt="GeckoVim Logo" width="200"/>
 <br>
-<img src="img/GeckoSign.svg" alt="GeckoVim Sign" width="400"/>
+<img src="img/GeckoSign.webp" alt="GeckoVim Sign" width="400"/>
 </div>
 
 
