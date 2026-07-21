@@ -1,9 +1,7 @@
 # ======================
-# Gecko Vim (Slim Gecko)
+# Slim Gecko
 # ======================
 
-Ver
-    1.0.0
-
-
++ No pluggins
++ Pure vim script
 

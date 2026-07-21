@@ -1,2 +1,7 @@
-Version 1.0.0
+======================
+GeckoVim (Vim Edition)
+======================
+
+Edition for classic vim
+
 
