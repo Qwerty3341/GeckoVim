@@ -1,12 +1,9 @@
----
 # GeckoVim
 <div align="center" style="background-color: #000000; padding: 20px;">
 <img src="docs/WholeLogo.webp" alt="GeckoVim Logo" width="400"/>
 </div>
 
 A simple vim distribution for programmers.
-
----
 
 # Why GeckoVim?
 
