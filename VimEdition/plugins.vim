@@ -8,6 +8,7 @@ call plug#begin()
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'preservim/nerdtree'
+	Plug 'preservim/nerdcommenter'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'tpope/vim-surround'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
