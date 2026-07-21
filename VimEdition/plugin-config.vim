@@ -1,4 +1,6 @@
+" =============
 " Coc.nvim
+" =============
 nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
@@ -25,16 +27,22 @@ inoremap <C-l> <Esc>:call coc#float#close_all()<CR>a
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
     \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
+" =============
 " Coc Extensions
+" =============
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
 
+" =============
 " NerdTree
+" =============
 nnoremap <leader>nt :NERDTreeFocus<CR>
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinSize = 30
 
+" =============
 " AirLine
+" =============
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -51,25 +59,31 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 
+" =============
 " yggdroot/indentline
+" =============
 augroup IndentLineTerminal
   autocmd!
   autocmd TerminalOpen * setlocal conceallevel=0
   autocmd FileType floaterm setlocal conceallevel=0
 augroup END
 
+" =============
 " Easymotion
+" =============
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
+" =============
 " vim-floaterm and Lazygit
-nnoremap <C-t> :FloatermToggle<CR>
-tnoremap <C-t> <C-\><C-n>:FloatermToggle<CR>
+" =============
 
-nnoremap <A-l> :FloatermNext<CR>
-nnoremap <A-h> :FloatermPrev<CR>
+nnoremap <C-t> :FloatermToggle shell<CR>
+tnoremap <C-t> <C-\><C-n>:FloatermToggle shell<CR>
 
-nnoremap <leader>g :FloatermToggle --name=lazygit lazygit<CR>
+
+" nnoremap <C-g> :FloatermToggle lazygit<CR>
+" tnoremap <C-g> <C-\><C-n>:FloatermToggle lazygit<CR>
 
 augroup FloatermMappings
   autocmd!
@@ -86,7 +100,9 @@ let g:floaterm_width = 0.9
 
 autocmd QuitPre * silent! FloatermKill!
 
+" =============
 " vim surround
+" =============
 vnoremap " <Esc>`>a"<Esc>`<i"<Esc>
 vnoremap ' <Esc>`>a'<Esc>`<i'<Esc>
 vnoremap ( <Esc>`>a)<Esc>`<i(<Esc>
@@ -94,29 +110,47 @@ vnoremap [ <Esc>`>a]<Esc>`<i[<Esc>
 vnoremap { <Esc>`>a}<Esc>`<i{<Esc>
 vnoremap ` <Esc>`>a`<Esc>`<i`<Esc>
 
+" =============
 " fzf.vim
+" =============
 nnoremap <silent> <leader>f :Files<CR>
 
+" =============
 " vim-commenter
-nnoremap <C-_> :Commentary<CR>
-vnoremap <C-_> :Commentary<CR>
-inoremap <C-_> <Esc>:Commentary<CR>A
+" =============
 
+" nnoremap <C-_> :Commentary<CR>
+" xnoremap <C-_> :Commentary<CR>
+" inoremap <C-_> <Esc>:Commentary<CR>A
+
+" This are for ghostty
+nnoremap <C-/> :Commentary<CR>
+xnoremap <C-/> :Commentary<CR>
+inoremap <C-/> <Esc>:Commentary<CR>A
+
+" =============
 " Polyglot
-let g:polyglot_disabled = ['markdown', 'json', 'html']
+" =============
+let g:polyglot_disabled = ['markdown', 'json']
 
+" =============
 " Hexokinase
+" =============
 let g:Hexokinase_highlighters = [ 
 \   'backgroundfull',
 \ ]
 
+" =============
 " undotree
+" =============
 nnoremap <leader>U :UndotreeToggle<CR>
 
-" ====================
+" ====================================================
 " Themes configuration
-" ====================
+" ====================================================
 
+" =============
 " Tokyio night
+" =============
 let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1

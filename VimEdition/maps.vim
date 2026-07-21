@@ -90,3 +90,5 @@ nnoremap <leader>} :tabnext<CR>
 " Ctrl z disabled
 nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
 
+" LazyGit
+nnoremap <leader>g :tab terminal ++close lazygit<CR>
