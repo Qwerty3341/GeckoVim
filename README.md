@@ -1,12 +1,14 @@
+---
 # GeckoVim
-<div align="center" style="background-color: #000000; padding: 20px;">
-    <img src="docs/WholeLogo.webp" alt="GeckoVim Logo" width="400"/>
-</div>
+    <div align="center" style="background-color: #000000; padding: 20px;">
+        <img src="docs/WholeLogo.webp" alt="GeckoVim Logo" width="400"/>
+    </div>
 
 A simple vim distribution for programmers.
 
 ---
-## Why GeckoVim?
+
+# Why GeckoVim?
 
 Gecko Vim follows the **KISS** (Keep It Simple, Stupid) principle. It provides a clean configuration with the essential functionality you expect from a modern code editor.
 
@@ -51,7 +53,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 > More info: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 
-#### 3. Nerdfont 
+#### 3. Nerdfont
 Download a nerdfont to get icons for vim-devicons plugin in vim
 Go to the link
 [https://www.nerdfonts.com/](https://www.nerdfonts.com/)
@@ -60,7 +62,7 @@ Go to the link
 
 Required for **coc.nvim** (IntelliSense, linting, etc.).
 
-Install it from the official site (Recomended): [https://nodejs.org/es/download](https://nodejs.org/es/download)
+Install it from the official site (Recommended): [https://nodejs.org/es/download](https://nodejs.org/es/download)
 
 Or using your package manager:
 
@@ -79,7 +81,7 @@ sudo pacman -S nodejs npm
 sudo dnf install nodejs npm
 ```
 
-#### 4. Need Go and make? (optional)
+#### 5. Need Go and make? (optional)
 
 Needed for one plugin "vim-hexokinase" (this provides highlight for css colors). If you don't want this plugin, you can skip this step.
 
@@ -125,7 +127,8 @@ git clone git@github.com:Qwerty3341/GeckoVim.git \
 && ln -sf ~/.vim/config.vim ~/.vimrc
 ```
 
-#### 2. Install plugins
+### Post Installation
+#### 1. Install plugins
 
 Open Vim and run:
 
@@ -133,11 +136,83 @@ Open Vim and run:
 :PlugInstall
 ```
 
+#### 2. Check for the comment mappings
+GeckoVim use a few commands to comment lines, yet also has the map "Ctrl /" for simple comment.
+1. Go to `~/.vim/plugin-config.vim` and search for the NERDCommenter plugin config
+2. Move to the line "" Keymaps for use ctrl / ..."
+3. Execute this command in command mod: `:echo getcharstr()`
+4. If it returns `^_` you must uncomment these lines
+    ```vim
+    " nnoremap <C-_> :call nerdcommenter#Comment('n', 'toggle')<CR>
+    " xnoremap <C-_> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
+    " inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
+    ```
+
+5. Otherwise if the command returns `\` uncomment these lines
+    ```vim
+    " nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
+    " xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
+    " inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
+    ```
+
+#### 3. Install the completions for your languages
+GeckoVim uses "coc.nvim" that is a plugin to provide intelliSense and completions. 
+
+Here are some examples:
+
+(Run this commands inside Vim in command mode)
+```vim
+# Python
+:CocInstall coc-pyright 
+
+# Java
+:CocInstall coc-java
+
+# Rust
+:CocInstall coc-rust-analyzer
+
+# C/C++/Objetive C
+:CocInstall coc-clangd
+
+# JS/TypeScript
+:CocInstall coc-tsserver
+
+# HTML
+:CocInstall coc-html
+
+# CSS
+:CocInstall coc-css
+
+# Markdown
+:CocInstall coc-markdownlint
+```
+
+If some language does not appear you can check the coc.nvim documentation:
+
+[https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+)
+
+
+#### 4. Install LazyGit (optional)
+LazyGit is a CLI client for git, GeckoVim provides "<leader> g" to open LazyGit inside Vim
+
+Go to the link
+[https://lazygit.dev/](https://lazygit.dev/)
+
+
+#### 5. Install OpenCode (optional)
+OpenCode is a open source AI agent for programming.
+GeckoVim provides "<leader> o" to use OpenCode inside Vim.
+However this map is just in case you don't want to use Tabs in the terminal and want to use OpenCode inside Vim
+
+Go to the link
+[https://opencode.ai/es](https://opencode.ai/es)
+
 ---
 
 ## Slim Gecko
 
-A lightweight version of GeckoVim focus on secondary editor or server administration.
+A lightweight version of GeckoVim focused on secondary editor or server administration.
 
 ### Installation
 
