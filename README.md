@@ -1,8 +1,8 @@
 ---
 # GeckoVim
-    <div align="center" style="background-color: #000000; padding: 20px;">
-        <img src="docs/WholeLogo.webp" alt="GeckoVim Logo" width="400"/>
-    </div>
+<div align="center" style="background-color: #000000; padding: 20px;">
+    <img src="docs/WholeLogo.webp" alt="GeckoVim Logo" width="400"/>
+</div>
 
 A simple vim distribution for programmers.
 
@@ -194,7 +194,7 @@ If some language does not appear you can check the coc.nvim documentation:
 
 
 #### 4. Install LazyGit (optional)
-LazyGit is a CLI client for git, GeckoVim provides "<leader> g" to open LazyGit inside Vim
+LazyGit is a CLI client for git, GeckoVim provides `<leader> g` to open LazyGit inside Vim
 
 Go to the link
 [https://lazygit.dev/](https://lazygit.dev/)
@@ -202,7 +202,7 @@ Go to the link
 
 #### 5. Install OpenCode (optional)
 OpenCode is a open source AI agent for programming.
-GeckoVim provides "<leader> o" to use OpenCode inside Vim.
+GeckoVim provides `<leader> o` to use OpenCode inside Vim.
 However this map is just in case you don't want to use Tabs in the terminal and want to use OpenCode inside Vim
 
 Go to the link
