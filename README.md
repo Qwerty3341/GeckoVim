@@ -1,10 +1,7 @@
 # GeckoVim
 <div align="center" style="background-color: #000000; padding: 20px;">
-<img src="img/Gecko_Vim_Logo.webp" alt="GeckoVim Logo" width="200"/>
-<br>
-<img src="img/GeckoSign.webp" alt="GeckoVim Sign" width="400"/>
+<img src="img/WholeLogo.webp" alt="GeckoVim Logo" width="200"/>
 </div>
-
 
 A simple vim distribution for programmers.
 
