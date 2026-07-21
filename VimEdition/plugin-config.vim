@@ -32,7 +32,8 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 " =============
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
 
-nnoremap <leader>e <Cmd>CocCommand explorer<CR>
+" Uncomment this if instead NERDTree you want to use coc-explorer
+" nnoremap <leader>e <Cmd>CocCommand explorer<CR>
 
 " =============
 " NERDTree
@@ -45,8 +46,52 @@ let g:NERDTreeWinSize = 30
 " =============
 " NERDCommenter
 " =============
-" Create default mappings
-let g:NERDCreateDefaultMappings = 1
+" Create default mappings? use \ instead of leader (it chockes with the change
+" command, the mappings are the same but instead of make it with leader it
+" uses "\"
+" If you want to use the leader just put the NERDCreateDefaultMappings = 1 and
+" delete the nmps and xmaps in this section)
+
+let g:NERDCreateDefaultMappings = 0
+
+nmap \cc <Plug>NERDCommenterComment
+xmap \cc <Plug>NERDCommenterComment
+
+nmap \cn <Plug>NERDCommenterNested
+xmap \cn <Plug>NERDCommenterNested
+
+nmap \c<space> <Plug>NERDCommenterToggle
+xmap \c<space> <Plug>NERDCommenterToggle
+
+nmap \cm <Plug>NERDCommenterMinimal
+xmap \cm <Plug>NERDCommenterMinimal
+
+nmap \ci <Plug>NERDCommenterInvert
+xmap \ci <Plug>NERDCommenterInvert
+
+nmap \cs <Plug>NERDCommenterSexy
+xmap \cs <Plug>NERDCommenterSexy
+
+nmap \cy <Plug>NERDCommenterYank
+xmap \cy <Plug>NERDCommenterYank
+
+nmap \c$ <Plug>NERDCommenterToEOL
+
+nmap \cA <Plug>NERDCommenterAppend
+
+imap \cI <Plug>NERDCommenterInsert
+
+nmap \ca <Plug>NERDCommenterAltDelims
+
+nmap \cl <Plug>NERDCommenterAlignLeft
+xmap \cl <Plug>NERDCommenterAlignLeft
+
+nmap \cb <Plug>NERDCommenterAlignBoth
+xmap \cb <Plug>NERDCommenterAlignBoth
+
+nmap \cu <Plug>NERDCommenterUncomment
+xmap \cu <Plug>NERDCommenterUncomment
+
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -72,6 +117,17 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
 
+" Keymaps for use ctrl / (are the same but depending of your terminal may work C-_ or C-/)
+" " XFCE terminal, Gnome console
+" nnoremap <C-_> :call nerdcommenter#Comment('n', 'toggle')<CR>
+" xnoremap <C-_> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
+" inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
+
+"
+" " Ghostty
+" nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
+" xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
+" inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
 
 " =============
 " AirLine
@@ -148,18 +204,6 @@ vnoremap ` <Esc>`>a`<Esc>`<i`<Esc>
 " =============
 nnoremap <silent> <leader>f :Files<CR>
 
-" =============
-" vim-commenter
-" =============
-
-" nnoremap <C-_> :Commentary<CR>
-" xnoremap <C-_> :Commentary<CR>
-" inoremap <C-_> <Esc>:Commentary<CR>A
-
-" This are for ghostty
-nnoremap <C-/> :Commentary<CR>
-xnoremap <C-/> :Commentary<CR>
-inoremap <C-/> <Esc>:Commentary<CR>A
 
 " =============
 " Polyglot

@@ -16,7 +16,6 @@ call plug#begin()
 	Plug 'voldikss/vim-floaterm'
 	Plug 'easymotion/vim-easymotion'
 	Plug 'mhinz/vim-signify'
-	Plug 'tpope/vim-commentary'
     Plug 'sheerun/vim-polyglot'
 	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	Plug 'mbbill/undotree'
