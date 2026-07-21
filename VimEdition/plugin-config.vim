@@ -46,51 +46,51 @@ let g:NERDTreeWinSize = 30
 " =============
 " NERDCommenter
 " =============
-" Create default mappings? use \ instead of leader (it chockes with the change
+" Create default mappings? use g instead of leader (it chockes with the change
 " command, the mappings are the same but instead of make it with leader it
-" uses "\"
+" uses "g"
 " If you want to use the leader just put the NERDCreateDefaultMappings = 1 and
 " delete the nmps and xmaps in this section)
 
 let g:NERDCreateDefaultMappings = 0
 
-nmap \cc <Plug>NERDCommenterComment
-xmap \cc <Plug>NERDCommenterComment
+nmap gcc <Plug>NERDCommenterComment
+xmap gcc <Plug>NERDCommenterComment
 
-nmap \cn <Plug>NERDCommenterNested
-xmap \cn <Plug>NERDCommenterNested
+nmap gcn <Plug>NERDCommenterNested
+xmap gcn <Plug>NERDCommenterNested
 
-nmap \c<space> <Plug>NERDCommenterToggle
-xmap \c<space> <Plug>NERDCommenterToggle
+nmap gc<space> <Plug>NERDCommenterToggle
+xmap gc<space> <Plug>NERDCommenterToggle
 
-nmap \cm <Plug>NERDCommenterMinimal
-xmap \cm <Plug>NERDCommenterMinimal
+nmap gcm <Plug>NERDCommenterMinimal
+xmap gcm <Plug>NERDCommenterMinimal
 
-nmap \ci <Plug>NERDCommenterInvert
-xmap \ci <Plug>NERDCommenterInvert
+nmap gci <Plug>NERDCommenterInvert
+xmap gci <Plug>NERDCommenterInvert
 
-nmap \cs <Plug>NERDCommenterSexy
-xmap \cs <Plug>NERDCommenterSexy
+nmap gcs <Plug>NERDCommenterSexy
+xmap gcs <Plug>NERDCommenterSexy
 
-nmap \cy <Plug>NERDCommenterYank
-xmap \cy <Plug>NERDCommenterYank
+nmap gcy <Plug>NERDCommenterYank
+xmap gcy <Plug>NERDCommenterYank
 
-nmap \c$ <Plug>NERDCommenterToEOL
+nmap gc$ <Plug>NERDCommenterToEOL
 
-nmap \cA <Plug>NERDCommenterAppend
+nmap gcA <Plug>NERDCommenterAppend
 
-imap \cI <Plug>NERDCommenterInsert
+imap gcI <Plug>NERDCommenterInsert
 
-nmap \ca <Plug>NERDCommenterAltDelims
+nmap gca <Plug>NERDCommenterAltDelims
 
-nmap \cl <Plug>NERDCommenterAlignLeft
-xmap \cl <Plug>NERDCommenterAlignLeft
+nmap gcl <Plug>NERDCommenterAlignLeft
+xmap gcl <Plug>NERDCommenterAlignLeft
 
-nmap \cb <Plug>NERDCommenterAlignBoth
-xmap \cb <Plug>NERDCommenterAlignBoth
+nmap gcb <Plug>NERDCommenterAlignBoth
+xmap gcb <Plug>NERDCommenterAlignBoth
 
-nmap \cu <Plug>NERDCommenterUncomment
-xmap \cu <Plug>NERDCommenterUncomment
+nmap gcu <Plug>NERDCommenterUncomment
+xmap gcu <Plug>NERDCommenterUncomment
 
 
 " Add spaces after comment delimiters by default
