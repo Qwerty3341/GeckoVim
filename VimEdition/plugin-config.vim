@@ -32,6 +32,8 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 " =============
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
 
+nnoremap <leader>e <Cmd>CocCommand explorer<CR>
+
 " =============
 " NerdTree
 " =============

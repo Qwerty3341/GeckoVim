@@ -29,8 +29,8 @@ tnoremap <C-S-Left>  <C-w>:vertical resize -10<CR>
 tnoremap <C-S-Up>    <C-w>:resize +5<CR>
 tnoremap <C-S-Down>  <C-w>:resize -5<CR>
 
-" --- netrw like nerdtree ---
-nmap <Leader>e :Explore<CR>
+" --- Native Explore ---
+nmap <Leader>E :Explore<CR>
 
 " Backspace improved
 vnoremap <BS> "_d
@@ -84,11 +84,16 @@ nnoremap <Leader>bd :bdelete<CR>
 
 " Tabs
 nnoremap <leader>T :tabnew<CR>
-nnoremap <leader>{ :tabprevious<CR>
-nnoremap <leader>} :tabnext<CR>
-
-" Ctrl z disabled
-nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
+nnoremap <M-[> :tabprevious<CR>
+nnoremap <M-]> :tabnext<CR>
+tnoremap <M-[> <C-\><C-n>:tabprevious<CR>
+tnoremap <M-]> <C-\><C-n>:tabnext<CR>
 
 " LazyGit
 nnoremap <leader>g :tab terminal ++close lazygit<CR>
+
+" OpenCode
+nnoremap <leader>o :tab terminal ++close opencode<CR>
+
+" Ctrl z disabled
+nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
