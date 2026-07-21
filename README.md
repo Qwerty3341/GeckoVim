@@ -1,6 +1,6 @@
 # GeckoVim
 <div align="center" style="background-color: #000000; padding: 20px;">
-<img src="img/WholeLogo.webp" alt="GeckoVim Logo" width="200"/>
+<img src="docs/WholeLogo.svg" alt="GeckoVim Logo" width="200"/>
 </div>
 
 A simple vim distribution for programmers.
