@@ -60,9 +60,9 @@ set background=dark
 colorscheme retrobox
 highlight Normal cterm=None
 
-" Gvim config (uncomment only if gvim does not get the config)
+" Gvim Font and Theme Config (uncomment only if gvim don't get any config)
 " if has('gui_running')
-" 	set guifont=Monospace\ 14
+" 	set guifont=Liberation\ Mono\ 14
 " 	set background=dark
 " 	colorscheme industry
 " endif
