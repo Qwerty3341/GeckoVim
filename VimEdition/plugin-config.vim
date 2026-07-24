@@ -28,8 +28,20 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
     \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " =============
-" Coc Extensions
+" Coc Functions
 " =============
+
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
 
 " Uncomment this if instead NERDTree you want to use coc-explorer
