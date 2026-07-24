@@ -41,8 +41,34 @@ function! ShowDocumentation()
   endif
 endfunction
 
-
+" Format document
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
+
+" Symbol renaming
+nmap <leader>rn <Plug>(coc-rename)
+
+xmap \f  <Plug>(coc-format-selected)
+nmap \f  <Plug>(coc-format-selected)
+
+" Applying code actions to the selected code block
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying code actions at the cursor position
+nmap <leader>ac  <Plug>(coc-codeaction-cursor)
+" Remap keys for apply code actions affect whole buffer
+nmap <leader>as  <Plug>(coc-codeaction-source)
+" Apply the most preferred quickfix action to fix diagnostic on the current line
+nmap <leader>Qf  <Plug>(coc-fix-current)
+
+" Remap keys for applying refactor code actions
+nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
+xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+
+" Run the Code Lens action on the current line
+nmap <leader>cl  <Plug>(coc-codelens-action)
 
 " Uncomment this if instead NERDTree you want to use coc-explorer
 " nnoremap <leader>e <Cmd>CocCommand explorer<CR>
@@ -58,6 +84,7 @@ let g:NERDTreeWinSize = 30
 " =============
 " NERDCommenter
 " =============
+
 " Create default mappings? use g instead of leader (it chockes with the change
 " command, the mappings are the same but instead of make it with leader it
 " uses "g"
