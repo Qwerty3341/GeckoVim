@@ -65,4 +65,5 @@ highlight Normal cterm=None
 " 	set guifont=Liberation\ Mono\ 14
 " 	set background=dark
 " 	colorscheme industry
+" 	set belloff=all
 " endif
