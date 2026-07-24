@@ -1,6 +1,11 @@
 " =============
 " Coc.nvim
 " =============
+
+set nobackup
+set nowritebackup
+set signcolumn=yes
+
 nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
@@ -40,6 +45,9 @@ function! ShowDocumentation()
     call feedkeys('K', 'in')
   endif
 endfunction
+
+" Highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Format document
 nnoremap <silent> <leader>F :call CocAction('format')<CR>
