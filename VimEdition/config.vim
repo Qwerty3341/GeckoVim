@@ -17,6 +17,7 @@ syntax on
 set showmatch
 set lazyredraw
 set updatetime=300
+set notimeout
 
 " Autocomplete
 set completeopt=menu,menuone,noselect
@@ -44,7 +45,9 @@ let &t_EI = "\e[2 q"   " Normal => bloque
 let &t_SI = "\e[6 q"   " Insert => b barra vertical
 let &t_SR = "\e[4 q"   " Replace => subrayado
 
+" Mapleader
 let mapleader=" "
+nnoremap <Space> <Nop>
 
 " Plugin config
 so ~/.vim/plugin-config.vim

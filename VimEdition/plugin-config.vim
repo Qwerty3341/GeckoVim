@@ -76,7 +76,7 @@ xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 
 " Run the Code Lens action on the current line
-nmap <leader>cl  <Plug>(coc-codelens-action)
+nmap <leader>CL  <Plug>(coc-codelens-action)
 
 " Uncomment this if instead NERDTree you want to use coc-explorer
 " nnoremap <leader>e <Cmd>CocCommand explorer<CR>
@@ -93,52 +93,8 @@ let g:NERDTreeWinSize = 30
 " NERDCommenter
 " =============
 
-" Create default mappings? use g instead of leader (it chockes with the change
-" command, the mappings are the same but instead of make it with leader it
-" uses "g"
-" If you want to use the leader just put the NERDCreateDefaultMappings = 1 and
-" delete the nmps and xmaps in this section)
-
-let g:NERDCreateDefaultMappings = 0
-
-nmap gcc <Plug>NERDCommenterComment
-xmap gcc <Plug>NERDCommenterComment
-
-nmap gcn <Plug>NERDCommenterNested
-xmap gcn <Plug>NERDCommenterNested
-
-nmap gc<space> <Plug>NERDCommenterToggle
-xmap gc<space> <Plug>NERDCommenterToggle
-
-nmap gcm <Plug>NERDCommenterMinimal
-xmap gcm <Plug>NERDCommenterMinimal
-
-nmap gci <Plug>NERDCommenterInvert
-xmap gci <Plug>NERDCommenterInvert
-
-nmap gcs <Plug>NERDCommenterSexy
-xmap gcs <Plug>NERDCommenterSexy
-
-nmap gcy <Plug>NERDCommenterYank
-xmap gcy <Plug>NERDCommenterYank
-
-nmap gc$ <Plug>NERDCommenterToEOL
-
-nmap gcA <Plug>NERDCommenterAppend
-
-imap gcI <Plug>NERDCommenterInsert
-
-nmap gca <Plug>NERDCommenterAltDelims
-
-nmap gcl <Plug>NERDCommenterAlignLeft
-xmap gcl <Plug>NERDCommenterAlignLeft
-
-nmap gcb <Plug>NERDCommenterAlignBoth
-xmap gcb <Plug>NERDCommenterAlignBoth
-
-nmap gcu <Plug>NERDCommenterUncomment
-xmap gcu <Plug>NERDCommenterUncomment
-
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -216,10 +172,6 @@ nmap t <Plug>(easymotion-t2)
 
 nnoremap <C-t> :FloatermToggle shell<CR>
 tnoremap <C-t> <C-\><C-n>:FloatermToggle shell<CR>
-
-
-" nnoremap <C-g> :FloatermToggle lazygit<CR>
-" tnoremap <C-g> <C-\><C-n>:FloatermToggle lazygit<CR>
 
 augroup FloatermMappings
   autocmd!
