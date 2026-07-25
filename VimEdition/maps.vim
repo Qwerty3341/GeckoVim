@@ -97,3 +97,6 @@ nnoremap <leader>o :tab terminal ++close opencode<CR>
 
 " Ctrl z disabled
 nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
+
+" Wrap
+nnoremap <leader>W :set invwrap<CR>
