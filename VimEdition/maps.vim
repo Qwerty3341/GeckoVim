@@ -100,3 +100,41 @@ nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
 
 " Wrap
 nnoremap <leader>W :set invwrap<CR>
+
+" Transparency
+let t:is_transparent = 0
+function! Toggle_Transparency()
+  if t:is_transparent == 0
+    let g:saved_guibg = synIDattr(synIDtrans(hlID('Normal')), 'bg#', 'gui')
+    let g:saved_ctermbg = synIDattr(synIDtrans(hlID('Normal')), 'bg#', 'cterm')
+    if empty(g:saved_guibg)
+      let g:saved_guibg = 'NONE'
+    endif
+    if empty(g:saved_ctermbg)
+      let g:saved_ctermbg = 'NONE'
+    endif
+
+    hi Normal guibg=NONE ctermbg=NONE
+    hi NonText guibg=NONE ctermbg=NONE
+    hi EndOfBuffer guibg=NONE ctermbg=NONE
+    hi SignColumn guibg=NONE ctermbg=NONE
+    hi VertSplit guibg=NONE ctermbg=NONE
+    hi StatusLine guibg=NONE ctermbg=NONE
+    hi StatusLineNC guibg=NONE ctermbg=NONE
+    hi Terminal guibg=NONE ctermbg=NONE
+
+    let t:is_transparent = 1
+  else
+
+    execute 'hi Normal guibg=' . g:saved_guibg . ' ctermbg=' . g:saved_ctermbg
+    execute 'hi NonText guibg=' . g:saved_guibg . ' ctermbg=' . g:saved_ctermbg
+    execute 'hi EndOfBuffer guibg=' . g:saved_guibg . ' ctermbg=' . g:saved_ctermbg
+    execute 'hi SignColumn guibg=' . g:saved_guibg . ' ctermbg=' . g:saved_ctermbg
+    execute 'hi Terminal guibg=' . g:saved_guibg . ' ctermbg=' . g:saved_ctermbg
+
+    let t:is_transparent = 0
+  endif
+endfunction
+
+nnoremap <leader>tr :call Toggle_Transparency()<CR>
+
