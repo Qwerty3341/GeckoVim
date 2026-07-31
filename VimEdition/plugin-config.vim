@@ -124,13 +124,13 @@ let g:NERDToggleCheckAllLines = 1
 " " XFCE terminal, Gnome console
 " nnoremap <C-_> :call nerdcommenter#Comment('n', 'toggle')<CR>
 " xnoremap <C-_> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-" inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
+" inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>
 
 "
 " " Ghostty
 " nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
 " xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-" inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
+" inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>
 
 " =============
 " AirLine
