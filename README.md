@@ -182,6 +182,9 @@ Here are some examples:
 
 # Markdown
 :CocInstall coc-markdownlint
+
+# SQL
+:CocInstall coc-sql
 ```
 
 If some language does not appear you can check the coc.nvim documentation:
