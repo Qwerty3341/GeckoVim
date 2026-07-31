@@ -61,6 +61,7 @@ so ~/.vim/maps.vim
 " Theme
 set background=dark
 colorscheme retrobox
+" highlight Normal guibg=#000000
 highlight Normal cterm=None
 
 " Gvim Font and Theme Config (uncomment only if gvim don't get any config)
@@ -69,4 +70,5 @@ highlight Normal cterm=None
 " 	set background=dark
 " 	colorscheme industry
 " 	set belloff=all
+"   inoremap <C-S-v> <C-r>+
 " endif
