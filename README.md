@@ -82,7 +82,8 @@ sudo dnf install nodejs npm
 
 Needed for one plugin "vim-hexokinase" (this provides highlight for css colors). If you don't want this plugin, you can skip this step.
 
-> **Note:** If you don't install Go, make sure to remove "Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }" from the file plugins.vim after installation.
+> **Note:**
+> If you don't install Go, make sure to remove "Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }" from the file plugins.vim after installation.
 
 **Arch Linux**
 
@@ -106,7 +107,8 @@ sudo dnf install golang make
 
 #### 1. Clone and install
 
-> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+> **Note:**
+> This will overwrite your existing `~/.vimrc`. Backup it first if needed.
 
 ```bash
 # HTTP
@@ -153,7 +155,7 @@ GeckoVim use a few commands to comment lines, yet also has the map "Ctrl /" for 
     ```
 
 #### 3. Install the completions for your languages
-GeckoVim uses "coc.nvim" that is a plugin to provide intelliSense and completions. 
+GeckoVim uses "coc.nvim" that is a plugin to provide intelliSense and completions.
 
 Here are some examples:
 
@@ -245,7 +247,7 @@ git clone https://github.com/qwerty3341/geckovim.git \
 ```
 
 ```bash
-### SSH
+autocmd FileType markdown setlocal conceallevel=0### SSH
 git clone git@github.com:Qwerty3341/GeckoVim.git \
     && cp GeckoVim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf GeckoVim

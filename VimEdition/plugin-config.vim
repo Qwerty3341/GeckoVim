@@ -207,7 +207,8 @@ nnoremap <silent> <leader>f :Files<CR>
 " =============
 " Polyglot
 " =============
-let g:polyglot_disabled = ['markdown', 'json']
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
 
 " =============
 " Hexokinase
