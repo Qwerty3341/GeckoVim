@@ -18,6 +18,8 @@ set showmatch
 set lazyredraw
 set updatetime=300
 set notimeout
+set splitright
+set splitbelow
 
 " Autocomplete
 set completeopt=menu,menuone,noselect

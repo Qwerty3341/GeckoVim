@@ -101,6 +101,10 @@ nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
 " Wrap
 nnoremap <leader>W :set invwrap<CR>
 
+" Open terminals
+nnoremap <leader>vt :vertical terminal<CR>
+nnoremap <leader>ht :terminal<CR>
+
 " Transparency
 let t:is_transparent = 0
 function! Toggle_Transparency()
