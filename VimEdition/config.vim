@@ -64,7 +64,8 @@ so ~/.vim/maps.vim
 set background=dark
 colorscheme retrobox
 " highlight Normal guibg=#000000
-highlight Normal cterm=None
+" highlight Normal cterm=None
+" highlight CursorLine guibg=#0d090c ctermbg=234
 
 " Gvim Font and Theme Config (uncomment only if gvim don't get any config)
 " if has('gui_running')
