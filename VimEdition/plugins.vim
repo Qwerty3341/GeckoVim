@@ -19,6 +19,7 @@ call plug#begin()
     Plug 'sheerun/vim-polyglot'
 	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	Plug 'mbbill/undotree'
+	Plug 'wolandark/vim-loremipsum'
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 
