@@ -15,11 +15,13 @@ call plug#begin()
 	Plug 'junegunn/fzf.vim'
 	Plug 'voldikss/vim-floaterm'
 	Plug 'easymotion/vim-easymotion'
-	Plug 'mhinz/vim-signify'
     Plug 'sheerun/vim-polyglot'
 	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	Plug 'mbbill/undotree'
 	Plug 'wolandark/vim-loremipsum'
+	Plug 'tpope/vim-fugitive'
+	Plug 'airblade/vim-gitgutter'
+	" Plug 'mhinz/vim-signify'
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 
