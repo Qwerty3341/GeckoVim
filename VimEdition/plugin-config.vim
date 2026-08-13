@@ -222,12 +222,3 @@ let g:Hexokinase_highlighters = [
 " =============
 nnoremap <leader>U :UndotreeToggle<CR>
 
-" ====================================================
-" Themes configuration
-" ====================================================
-
-" =============
-" Tokyio night
-" =============
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1

@@ -25,9 +25,6 @@ call plug#begin()
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 
-	Plug 'ghifarit53/tokyonight-vim'
 	Plug 'dracula/vim', { 'as': 'dracula' }
-	Plug 'cocopon/iceberg.vim'
 	Plug 'srcery-colors/srcery-vim'
-	Plug 'lunacookies/vim-colors-xcode'
 call plug#end()
