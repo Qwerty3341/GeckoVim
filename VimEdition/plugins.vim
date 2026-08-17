@@ -23,6 +23,7 @@ call plug#begin()
 	Plug 'airblade/vim-gitgutter'
 	" Plug 'mhinz/vim-signify'
 	Plug 'honza/vim-snippets'
+	Plug 'github/copilot.vim'
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 
