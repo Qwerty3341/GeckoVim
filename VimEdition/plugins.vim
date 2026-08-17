@@ -22,6 +22,7 @@ call plug#begin()
 	Plug 'tpope/vim-fugitive'
 	Plug 'airblade/vim-gitgutter'
 	" Plug 'mhinz/vim-signify'
+	Plug 'honza/vim-snippets'
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 

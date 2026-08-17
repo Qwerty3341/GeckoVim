@@ -187,7 +187,21 @@ Here are some examples:
 
 # SQL
 :CocInstall coc-sql
+
+# Docker file
+:CocInstall coc-docker
 ```
+
+##### CocExtensions
+
+Some extensions for coc.nvim
+
+```shell
+:CocInstall coc-explorer
+
+:CocInstall coc-snippets
+```
+
 
 If some language does not appear you can check the coc.nvim documentation:
 
