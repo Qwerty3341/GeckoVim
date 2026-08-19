@@ -16,12 +16,13 @@ call plug#begin()
 	Plug 'voldikss/vim-floaterm'
 	Plug 'easymotion/vim-easymotion'
     Plug 'sheerun/vim-polyglot'
-	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+	" Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+	Plug 'chrisbra/Colorizer'
 	Plug 'mbbill/undotree'
 	Plug 'wolandark/vim-loremipsum'
 	Plug 'tpope/vim-fugitive'
 	Plug 'airblade/vim-gitgutter'
-	" Plug 'mhinz/vim-signify'
+	" Plug 'mhinz/vim-signify' " Use only if you use another version system
 	Plug 'honza/vim-snippets'
 	Plug 'github/copilot.vim'
 
