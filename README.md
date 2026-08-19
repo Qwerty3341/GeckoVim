@@ -78,12 +78,18 @@ sudo pacman -S nodejs npm
 sudo dnf install nodejs npm
 ```
 
-#### 5. Need Go and make? (optional)
+#### 5. Need Go and make?
 
-Needed for one plugin "vim-hexokinase" (this provides highlight for css colors). If you don't want this plugin, you can skip this step.
+Gecko provides two options for css highlighting colors
 
-> **Note:**
-> If you don't install Go, make sure to remove "Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }" from the file plugins.vim after installation.
+##### First option: You don't want to install go
+
+1. Make sure to remove `Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }` from the file plugins.vim after installation.
+2. Go to the Installation section (Skip this step)
+
+##### Second option: You prefer hexokinase for color highlight
+
+In this case install go and make
 
 **Arch Linux**
 
@@ -127,6 +133,7 @@ git clone git@github.com:Qwerty3341/GeckoVim.git \
 ```
 
 ### Post Installation
+
 #### 1. Install plugins
 
 Open Vim and run:
@@ -147,7 +154,7 @@ GeckoVim use a few commands to comment lines, yet also has the map "Ctrl /" for 
     " inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
     ```
 
-5. Otherwise if the command returns `\` uncomment these lines
+5. Otherwise if the command returns `/` uncomment these lines
     ```vim
     " nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
     " xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
@@ -155,11 +162,13 @@ GeckoVim use a few commands to comment lines, yet also has the map "Ctrl /" for 
     ```
 
 #### 3. Install the completions for your languages
+
 GeckoVim uses "coc.nvim" that is a plugin to provide intelliSense and completions.
 
 Here are some examples:
 
 (Run this commands inside Vim in command mode)
+
 ```vim
 # Python
 :CocInstall coc-pyright 
@@ -197,24 +206,25 @@ Here are some examples:
 Some extensions for coc.nvim
 
 ```shell
-:CocInstall coc-explorer
-
+# Recommended to improve the autocompletion
 :CocInstall coc-snippets
-```
 
+:CocInstall coc-explorer
+```
 
 If some language does not appear you can check the coc.nvim documentation:
 
 [https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 )
 
+#### 4. Git and LazyGit
 
-#### 4. Install LazyGit (optional)
 LazyGit is a CLI client for git, GeckoVim provides `<leader> g` to open LazyGit inside Vim
 
 Go to the link
 [https://lazygit.dev/](https://lazygit.dev/)
 
+If you don't want to install LazyGit you alredy have the plug "vim-fugitive" to do Git commands
 
 #### 5. Install OpenCode (optional)
 OpenCode is a open source AI agent for programming.
@@ -223,6 +233,14 @@ However this map is just in case you don't want to use Tabs in the terminal and 
 
 Go to the link
 [https://opencode.ai/es](https://opencode.ai/es)
+
+#### 6. Activate Copilot
+
+Gecko have the Copilot plugin you can use it with this command
+
+```vim
+:Copilot setup
+```
 
 ---
 
@@ -235,23 +253,27 @@ A lightweight version of GeckoVim focused on secondary editor or server administ
 1. Download vim (The version you want)
 
 **Debian / Ubuntu**
+
 ```bash
 sudo apt update && sudo apt install vim-gtk3
 ```
 
 **Arch Linux**
+
 ```bash
 sudo pacman -S gvim
 ```
 
 **Fedora**
+
 ```bash
 sudo dnf install vim-enhanced
 ```
 
-2. Copy the configuration
+2.Copy the configuration
 
-> **Warning:** This will overwrite your existing `~/.vimrc`. Backup it first if needed.
+> [!Warning]
+> This will overwrite your existing `~/.vimrc`. Backup it first if needed.
 
 ```bash
 ### HTTP
@@ -269,9 +291,8 @@ git clone git@github.com:Qwerty3341/GeckoVim.git \
 
 ---
 
-
 ## Neovim Edition
 
+> [!NOTE] A Neovim-native version of GeckoVim.
 > Coming soon.
 
-A Neovim-native version of GeckoVim.

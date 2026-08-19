@@ -215,9 +215,14 @@ let g:indentLine_conceallevel = 1
 " =============
 " Hexokinase
 " =============
-let g:Hexokinase_highlighters = [ 
-\   'backgroundfull',
-\ ]
+" let g:Hexokinase_highlighters = [
+" \   'backgroundfull',
+" \ ]
+
+" =============
+" Colorizer
+" =============
+let g:colorizer_auto_filetype='css,html'
 
 " =============
 " undotree
