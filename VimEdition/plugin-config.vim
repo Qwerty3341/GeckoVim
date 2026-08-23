@@ -233,4 +233,6 @@ nnoremap <leader>U :UndotreeToggle<CR>
 " Copilot
 " =============
 let g:copilot_enabled = 0
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
 
