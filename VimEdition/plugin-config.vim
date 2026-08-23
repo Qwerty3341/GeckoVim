@@ -229,3 +229,8 @@ let g:colorizer_auto_filetype='css,html'
 " =============
 nnoremap <leader>U :UndotreeToggle<CR>
 
+" =============
+" Copilot
+" =============
+let g:copilot_enabled = 0
+
