@@ -132,6 +132,11 @@ let g:NERDToggleCheckAllLines = 1
 " xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
 " inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>
 
+" Flask and Django comments
+let  g:NERDCustomDelimiters = {
+  \  'htmldjango': {'left': '<!--', 'right': '-->'}
+\}
+
 " =============
 " AirLine
 " =============
