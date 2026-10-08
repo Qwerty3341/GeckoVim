@@ -7,7 +7,7 @@ A simple vim distribution for programmers.
 
 # Why GeckoVim?
 
-Gecko Vim follows the **KISS** (Keep It Simple, Stupid) principle. It provides a clean configuration with the essential functionality you expect from a modern code editor.
+Gecko Vim provides a clean configuration with the essential functionality you expect from a modern code editor such as VS code.
 
 Once Gecko Vim is installed, I invite you to customize it however you like. Add plugins, remove features, remap keys, or adapt it to your workflow. Gecko Vim is designed to be a starting point, not a limitation.
 
