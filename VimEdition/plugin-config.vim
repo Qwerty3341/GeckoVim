@@ -97,7 +97,7 @@ let g:NERDTreeWinSize = 30
 let g:NERDCreateDefaultMappings = 1
 
 " Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
+let g:NERDSpaceDelims = 0
 
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
