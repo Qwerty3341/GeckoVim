@@ -30,4 +30,5 @@ call plug#begin()
 	Plug 'ayu-theme/ayu-vim' 
 	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'srcery-colors/srcery-vim'
+	Plug 'jnurmine/Zenburn'
 call plug#end()
