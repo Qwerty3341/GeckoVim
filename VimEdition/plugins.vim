@@ -31,4 +31,5 @@ call plug#begin()
 	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'srcery-colors/srcery-vim'
 	Plug 'jnurmine/Zenburn'
+	Plug 'mhartington/oceanic-next'
 call plug#end()
