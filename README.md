@@ -6,6 +6,7 @@
 A simple vim distribution for programmers.
 
 Available on Linux and MacOS
+
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 
