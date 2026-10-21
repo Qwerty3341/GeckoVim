@@ -78,6 +78,12 @@ nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 " Run the Code Lens action on the current line
 nmap <leader>CL  <Plug>(coc-codelens-action)
 
+" Visualize Markdown in the browser
+augroup markdown_preview
+  autocmd!
+  autocmd FileType markdown nnoremap <buffer> <silent> <leader>mp :CocCommand markdown-preview-enhanced.openPreview<CR>
+augroup END
+
 " Uncomment this if instead NERDTree you want to use coc-explorer
 " nnoremap <leader>e <Cmd>CocCommand explorer<CR>
 

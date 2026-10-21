@@ -248,7 +248,11 @@ Some extensions for coc.nvim
 # Recommended to improve the autocompletion
 :CocInstall coc-snippets
 
+# It is a tree of files like NERDTree
 :CocInstall coc-explorer
+
+# For visualize markdown
+:CocInstall coc-webview coc-markdown-preview-enhanced
 ```
 
 If some language does not appear you can check the coc.nvim documentation:
