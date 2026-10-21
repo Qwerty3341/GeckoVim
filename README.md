@@ -5,6 +5,10 @@
 
 A simple vim distribution for programmers.
 
+Available on Linux and MacOS
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+
 # Why GeckoVim?
 
 Gecko Vim provides a clean configuration with the essential functionality you expect from a modern code editor such as VS code.
@@ -19,7 +23,9 @@ Once Gecko Vim is installed, I invite you to customize it however you like. Add 
 
 #### 1. Vim
 
-It is highly recommended to install **gVim**, which also includes terminal Vim.
+It is highly recommended to install **gVim** for shared clipboard, which also includes terminal Vim.
+
+##### Linux
 
 **Debian / Ubuntu**
 
@@ -37,6 +43,17 @@ sudo pacman -S gvim
 
 ```bash
 sudo dnf install vim-enhanced
+```
+
+##### MacOS
+Gvim (MacVim)
+```bash
+brew install macvim
+```
+
+Only terminal vim
+```bash
+brew install vim
 ```
 
 #### 2. vim-plug
@@ -63,6 +80,7 @@ Install it from the official site (Recommended): [https://nodejs.org/es/download
 
 Or using your package manager:
 
+##### Linux
 ```bash
 # Debian / Ubuntu
 sudo apt install nodejs npm
@@ -78,6 +96,10 @@ sudo pacman -S nodejs npm
 sudo dnf install nodejs npm
 ```
 
+##### MacOS
+```bash
+brew install node
+```
 #### 5. Need Go and make?
 
 Gecko provides two options for css highlighting colors
@@ -90,6 +112,8 @@ Gecko provides two options for css highlighting colors
 ##### Second option: You prefer hexokinase for color highlight
 
 In this case install go and make
+
+##### Linux
 
 **Arch Linux**
 
@@ -107,6 +131,11 @@ sudo apt install golang-go make
 
 ```bash
 sudo dnf install golang make
+```
+
+##### MacOS
+```bash
+brew install go
 ```
 
 ### Installation
@@ -283,7 +312,7 @@ git clone https://github.com/qwerty3341/geckovim.git \
 ```
 
 ```bash
-autocmd FileType markdown setlocal conceallevel=0### SSH
+### SSH
 git clone git@github.com:Qwerty3341/GeckoVim.git \
     && cp GeckoVim/SlimGecko/config.vim ~/.vimrc \
     && rm -rf GeckoVim
