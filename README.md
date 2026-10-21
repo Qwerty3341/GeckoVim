@@ -45,13 +45,16 @@ sudo pacman -S gvim
 sudo dnf install vim-enhanced
 ```
 
-##### MacOS
-Gvim (MacVim)
+##### macOS
+
+**MacVim (GUI, with shared clipboard)**
+
 ```bash
 brew install macvim
 ```
 
-Only terminal vim
+**Only terminal vim**
+
 ```bash
 brew install vim
 ```
@@ -100,18 +103,16 @@ sudo dnf install nodejs npm
 ```bash
 brew install node
 ```
+
 #### 5. Need Go and make?
 
-Gecko provides two options for css highlighting colors
+**By default, you don't need them.** GeckoVim uses `chrisbra/Colorizer` for CSS color highlighting, so the `vim-hexokinase` plugin are disabled in `plugins.vim`:
 
-##### First option: You don't want to install go
+```vim
+" Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+```
 
-1. Make sure to remove `Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }` from the file plugins.vim after installation.
-2. Go to the Installation section (Skip this step)
-
-##### Second option: You prefer hexokinase for color highlight
-
-In this case install go and make
+If you prefer hexokinase, uncomment that line in `~/.vim/plugins.vim` and install go and make:
 
 ##### Linux
 
@@ -133,9 +134,17 @@ sudo apt install golang-go make
 sudo dnf install golang make
 ```
 
-##### MacOS
+##### macOS
+
 ```bash
 brew install go
+xcode-select --install # provides make (no operation if already installed)
+```
+
+Or, if you prefer GNU make from Homebrew (installed as `gmake`):
+
+```bash
+brew install make
 ```
 
 ### Installation
@@ -243,8 +252,7 @@ Some extensions for coc.nvim
 
 If some language does not appear you can check the coc.nvim documentation:
 
-[https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
-)
+[https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
 #### 4. Git and LazyGit
 
@@ -252,6 +260,11 @@ LazyGit is a CLI client for git, GeckoVim provides `<leader> g` to open LazyGit 
 
 Go to the link
 [https://lazygit.dev/](https://lazygit.dev/)
+
+##### macOS
+```bash
+brew install lazygit
+```
 
 If you don't want to install LazyGit you alredy have the plug "vim-fugitive" to do Git commands
 
@@ -297,6 +310,12 @@ sudo pacman -S gvim
 
 ```bash
 sudo dnf install vim-enhanced
+```
+
+**macOS**
+
+```bash
+brew install vim    # or: brew install macvim
 ```
 
 2.Copy the configuration
