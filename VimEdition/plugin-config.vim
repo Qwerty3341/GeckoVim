@@ -84,7 +84,7 @@ nmap <leader>CL  <Plug>(coc-codelens-action)
 " =============
 " NERDTree
 " =============
-nnoremap <leader>nt :NERDTreeFocus<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinSize = 30
