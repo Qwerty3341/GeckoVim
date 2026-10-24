@@ -32,4 +32,5 @@ call plug#begin()
 	Plug 'srcery-colors/srcery-vim'
 	Plug 'mhartington/oceanic-next'
 	Plug 'hardhackerlabs/theme-vim', { 'as': 'hardhacker' }
+	Plug 'rafalbromirski/vim-aurora'
 call plug#end()
