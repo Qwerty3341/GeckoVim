@@ -29,6 +29,17 @@ tnoremap <C-S-Left>  <C-w>:vertical resize -10<CR>
 tnoremap <C-S-Up>    <C-w>:resize +5<CR>
 tnoremap <C-S-Down>  <C-w>:resize -5<CR>
 
+" Uncomment this if you have to use Alt and arrow keys instead of <C-S->
+"nnoremap <M-Right> :vertical resize +10<CR>
+"nnoremap <M-Left>  :vertical resize -10<CR>
+"nnoremap <M-Up>    :resize +5<CR>
+"nnoremap <M-Down>  :resize -5<CR>
+"
+"tnoremap <M-Right> <C-w>:vertical resize +10<CR>
+"tnoremap <M-Left>  <C-w>:vertical resize -10<CR>
+"tnoremap <M-Up>    <C-w>:resize +5<CR>
+"tnoremap <M-Down>  <C-w>:resize -5<CR>
+
 " --- Native Explore ---
 nmap <Leader>E :Explore<CR>
 
