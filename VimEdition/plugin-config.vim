@@ -233,6 +233,12 @@ let g:indentLine_conceallevel = 1
 " =============
 " Colorizer
 " =============
+
+augroup AutoHighlight
+    autocmd!
+    autocmd WinEnter * silent! ColorHighlight
+augroup END
+
 let g:colorizer_auto_filetype='css,html'
 
 " =============
