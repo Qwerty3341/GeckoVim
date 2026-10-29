@@ -1,0 +1,7 @@
+{
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "clangd.arguments": [
+    "--fallback-style=WebKit"
+  ]
+}
+
