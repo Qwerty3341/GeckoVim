@@ -76,7 +76,7 @@ xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 
 " Run the Code Lens action on the current line
-nmap <leader>CL  <Plug>(coc-codelens-action)
+nmap \cl <Plug>(coc-codelens-action)
 
 " Visualize Markdown in the browser
 augroup markdown_preview
@@ -213,6 +213,7 @@ let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_json_syntax_conceal = 0
 let g:indentLine_conceallevel = 1
+let g:polyglot_disabled = ['autoindent']
 
 " =============
 " Hexokinase
