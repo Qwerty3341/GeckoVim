@@ -199,15 +199,6 @@ let g:floaterm_width = 0.9
 
 autocmd QuitPre * silent! FloatermKill!
 
-" =============
-" vim surround
-" =============
-vnoremap " <Esc>`>a"<Esc>`<i"<Esc>
-vnoremap ' <Esc>`>a'<Esc>`<i'<Esc>
-vnoremap ( <Esc>`>a)<Esc>`<i(<Esc>
-vnoremap [ <Esc>`>a]<Esc>`<i[<Esc>
-vnoremap { <Esc>`>a}<Esc>`<i{<Esc>
-vnoremap ` <Esc>`>a`<Esc>`<i`<Esc>
 
 " =============
 " fzf.vim

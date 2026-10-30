@@ -10,13 +10,23 @@ nnoremap <Tab> >>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" Surround (if you don't want to use the plugin "vim surround")
-" xnoremap s" c"<C-r>""<Esc>
-" xnoremap s' c'<C-r>"'<Esc>
-" xnoremap s( c(<C-r>")<Esc>
-" xnoremap s[ c[<C-r>"]<Esc>
-" xnoremap s{ c{<C-r>"}<Esc>
-" xnoremap s` c`<C-r>"`<Esc>
+" Surround 
+" (if you don't want to use the plugin "vim surround")
+" Uncomment the config you want
+
+xnoremap g" c"<C-r>""<Esc>
+xnoremap g' c'<C-r>"'<Esc>
+xnoremap g( c(<C-r>")<Esc>
+xnoremap g[ c[<C-r>"]<Esc>
+xnoremap g{ c{<C-r>"}<Esc>
+xnoremap g` c`<C-r>"`<Esc>
+
+" vnoremap " <Esc>`>a"<Esc>`<i"<Esc>
+" vnoremap ' <Esc>`>a'<Esc>`<i'<Esc>
+" vnoremap ( <Esc>`>a)<Esc>`<i(<Esc>
+" vnoremap [ <Esc>`>a]<Esc>`<i[<Esc>
+" vnoremap { <Esc>`>a}<Esc>`<i{<Esc>
+" vnoremap ` <Esc>`>a`<Esc>`<i`<Esc>
 
 " Fit panel's size
 nnoremap <C-S-Right> :vertical resize +10<CR>
