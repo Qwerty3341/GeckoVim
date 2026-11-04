@@ -199,12 +199,10 @@ let g:floaterm_width = 0.9
 
 autocmd QuitPre * silent! FloatermKill!
 
-
 " =============
 " fzf.vim
 " =============
 nnoremap <silent> <leader>f :Files<CR>
-
 
 " =============
 " Polyglot
@@ -213,7 +211,6 @@ let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_json_syntax_conceal = 0
 let g:indentLine_conceallevel = 1
-let g:polyglot_disabled = ['autoindent']
 
 " =============
 " Hexokinase
@@ -234,7 +231,7 @@ augroup END
 let g:colorizer_auto_filetype='css,html'
 
 " =============
-" undotree
+" Undotree
 " =============
 nnoremap <leader>U :UndotreeToggle<CR>
 
