@@ -28,8 +28,6 @@ set wildmode=longest:full,full
 
 " Indent
 filetype plugin indent on
-set smartindent
-set cindent
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
