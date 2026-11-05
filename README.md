@@ -330,3 +330,7 @@ git clone git@github.com:Qwerty3341/GeckoVim.git \
 > [!NOTE] A Neovim-native version of GeckoVim.
 > Coming soon.
 
+## Themes
+
+If you want to download themes check for the `themes.md` file
+

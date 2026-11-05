@@ -27,13 +27,4 @@ call plug#begin()
 	Plug 'honza/vim-snippets'
 	Plug 'github/copilot.vim'
 	Plug 'mhinz/vim-startify'
-
-	" Themes
-	Plug 'ayu-theme/ayu-vim' 
-	Plug 'dracula/vim', { 'as': 'dracula' }
-	Plug 'srcery-colors/srcery-vim'
-	Plug 'mhartington/oceanic-next'
-	Plug 'hardhackerlabs/theme-vim', { 'as': 'hardhacker' }
-	Plug 'rafalbromirski/vim-aurora'
-	Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 call plug#end()
