@@ -26,6 +26,7 @@ call plug#begin()
 	" Plug 'mhinz/vim-signify' " Use only if you use another version system
 	Plug 'honza/vim-snippets'
 	Plug 'github/copilot.vim'
+	Plug 'mhinz/vim-startify'
 
 	" Themes
 	Plug 'ayu-theme/ayu-vim' 
