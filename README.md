@@ -181,26 +181,7 @@ Open Vim and run:
 :PlugInstall
 ```
 
-#### 2. Check for the comment mappings
-GeckoVim use a few commands to comment lines, yet also has the map "Ctrl /" for simple comment.
-1. Go to `~/.vim/plugin-config.vim` and search for the NERDCommenter plugin config
-2. Move to the line "" Keymaps for use ctrl / ..."
-3. Execute this command in command mod: `:echo getcharstr()`
-4. If it returns `^_` you must uncomment these lines
-    ```vim
-    " nnoremap <C-_> :call nerdcommenter#Comment('n', 'toggle')<CR>
-    " xnoremap <C-_> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-    " inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
-    ```
-
-5. Otherwise if the command returns `/` uncomment these lines
-    ```vim
-    " nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
-    " xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-    " inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR>
-    ```
-
-#### 3. Install the completions for your languages
+#### 2. Install the completions for your languages
 
 GeckoVim uses "coc.nvim" that is a plugin to provide intelliSense and completions.
 

@@ -127,16 +127,13 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 " Keymaps for use ctrl / (are the same but depending of your terminal may work C-_ or C-/)
-" " XFCE terminal, Gnome console
-" nnoremap <C-_> :call nerdcommenter#Comment('n', 'toggle')<CR>
-" xnoremap <C-_> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-" inoremap <C-_> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>
 
-"
-" " Ghostty
-" nnoremap <C-/> :call nerdcommenter#Comment('n', 'toggle')<CR>
-" xnoremap <C-/> :call nerdcommenter#Comment('x', 'toggle')<CR>gv
-" inoremap <C-/> <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>
+for s:key in ['<C-_>', '<C-/>']
+  execute 'nnoremap <silent>' . s:key . " :call nerdcommenter#Comment('n', 'toggle')<CR>"
+  execute 'xnoremap <silent>' . s:key . " :call nerdcommenter#Comment('x', 'toggle')<CR>gv"
+  execute 'inoremap <silent>' . s:key . " <C-o>:call nerdcommenter#Comment('n', 'toggle')<CR><End>"
+endfor
+unlet s:key
 
 " Flask and Django comments
 let  g:NERDCustomDelimiters = {
