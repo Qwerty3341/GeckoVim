@@ -35,4 +35,5 @@ call plug#begin()
 	Plug 'mhartington/oceanic-next'
 	Plug 'hardhackerlabs/theme-vim', { 'as': 'hardhacker' }
 	Plug 'rafalbromirski/vim-aurora'
+	Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 call plug#end()
