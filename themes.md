@@ -12,4 +12,5 @@ Plug 'hardhackerlabs/theme-vim', { 'as': 'hardhacker' }
 Plug 'rafalbromirski/vim-aurora'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'rose-pine/vim'
+Plug 'wuelnerdotexe/vim-enfocado'
 ```
