@@ -140,6 +140,10 @@ let  g:NERDCustomDelimiters = {
   \  'htmldjango': {'left': '<!--', 'right': '-->'}
 \}
 
+let g:NERDCustomDelimiters = { 
+  \'python': { 'left': '#','right': '' } 
+\}
+
 " =============
 " AirLine
 " =============
