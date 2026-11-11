@@ -36,6 +36,10 @@ set autoindent
 set foldmethod=indent 
 set foldlevel=50
 
+" Comments
+set formatoptions+=r
+set formatoptions+=o
+
 " Improved Search
 set incsearch
 set hlsearch
