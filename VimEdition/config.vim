@@ -38,7 +38,8 @@ set foldlevel=50
 
 " Comments
 set formatoptions+=r
-set formatoptions+=o
+" set formatoptions+=o
+set formatoptions+=/
 
 " Improved Search
 set incsearch
