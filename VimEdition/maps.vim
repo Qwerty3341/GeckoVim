@@ -163,3 +163,5 @@ endfunction
 
 nnoremap <leader>tr :call Toggle_Transparency()<CR>
 
+command! Retab set noexpandtab | %retab!
+
