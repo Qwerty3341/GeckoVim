@@ -13,11 +13,14 @@ set autoread
 set noshowmode
 set clipboard=unnamedplus
 set encoding=UTF-8
+filetype plugin on
 syntax on
 set showmatch
 set lazyredraw
 set updatetime=300
-
+set notimeout
+set splitright
+set splitbelow
 " set cursorline
 " set termguicolors
 
@@ -28,13 +31,19 @@ set wildmode=longest:full,full
 
 " Indent
 filetype plugin indent on
-set smartindent
-set cindent
+set noexpandtab
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
+set foldmethod=indent
+set foldlevel=99
 set autoindent
+
+" Comments
+set formatoptions+=r
+" set formatoptions+=o
+set formatoptions+=/
 
 " Improved Search
 set incsearch
@@ -42,16 +51,17 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" Cursor configurations
-let &t_EI = "\e[2 q"   " Normal => bloque
-let &t_SI = "\e[6 q"   " Insert => barra vertical
-let &t_SR = "\e[4 q"   " Replace => subrayado
+" Cursor
+let &t_EI = "\e[2 q"  " Normal  => bloque
+let &t_SI = "\e[6 q"  " Insert  => barra vertical
+let &t_SR = "\e[4 q"  " Replace => subrayado
 
 " =========================================================================================
 " Maps Config
 " =========================================================================================
 
 let mapleader=" "
+nnoremap <Space> <Nop>
 
 " write and quit
 nmap <Leader>w :w<CR>
@@ -66,23 +76,23 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " Surround 
-xnoremap s" c"<C-r>""<Esc>
-xnoremap s' c'<C-r>"'<Esc>
-xnoremap s( c(<C-r>")<Esc>
-xnoremap s[ c[<C-r>"]<Esc>
-xnoremap s{ c{<C-r>"}<Esc>
-xnoremap s` c`<C-r>"`<Esc>
+xnoremap g" c"<C-r>""<Esc>
+xnoremap g' c'<C-r>"'<Esc>
+xnoremap g( c(<C-r>")<Esc>
+xnoremap g[ c[<C-r>"]<Esc>
+xnoremap g{ c{<C-r>"}<Esc>
+xnoremap g` c`<C-r>"`<Esc>
 
 " Fit panel's size
-nnoremap <C-S-Right> :vertical resize +10<CR>
-nnoremap <C-S-Left>  :vertical resize -10<CR>
-nnoremap <C-S-Up>    :resize +5<CR>
-nnoremap <C-S-Down>  :resize -5<CR>
+nnoremap <M-Right> :vertical resize +10<CR>
+nnoremap <M-Left>  :vertical resize -10<CR>
+nnoremap <M-Up>    :resize +5<CR>
+nnoremap <M-Down>  :resize -5<CR>
 
-tnoremap <C-S-Right> <C-w>:vertical resize +10<CR>
-tnoremap <C-S-Left>  <C-w>:vertical resize -10<CR>
-tnoremap <C-S-Up>    <C-w>:resize +5<CR>
-tnoremap <C-S-Down>  <C-w>:resize -5<CR>
+tnoremap <M-Right> <C-w>:vertical resize +10<CR>
+tnoremap <M-Left>  <C-w>:vertical resize -10<CR>
+tnoremap <M-Up>    <C-w>:resize +5<CR>
+tnoremap <M-Down>  <C-w>:resize -5<CR>
 
 " --- netrw like nerdtree ---
 nmap <Leader>e :Explore<CR>
@@ -110,8 +120,8 @@ nnoremap <leader>hs :split<CR>
 "   if you want to substitute one of these characters
 "   you must put // insted of /
 
-xnoremap F "zy:%s/<C-r>=escape(@z, '/\')<CR>//gc<Left><Left><Left>
-xnoremap f "zy:.,$s/<C-r>=escape(@z, '/\')<CR>//gc<Left><Left><Left>
+xnoremap Sg "zy:%s/<C-r>=escape(@z, '/\')<CR>//gc<Left><Left><Left>
+xnoremap S. "zy:.,$s/<C-r>=escape(@z, '/\')<CR>//gc<Left><Left><Left>
 
 " Panels improved
 noremap <C-h> <C-w>h
@@ -138,14 +148,20 @@ nnoremap <Leader>bl :buffers<CR>
 
 " Tabs
 nnoremap <leader>T :tabnew<CR>
-nnoremap <leader>{ :tabprevious<CR>
-nnoremap <leader>} :tabnext<CR>
+nnoremap <M-[> :tabprevious<CR>
+nnoremap <M-]> :tabnext<CR>
+tnoremap <M-[> <C-\><C-n>:tabprevious<CR>
+tnoremap <M-]> <C-\><C-n>:tabnext<CR>
 
 " Ctrl z disabled
 nnoremap <C-z> :echo "Don't close vim, keep programming!"<CR>
 
 " Wrap
 nnoremap <leader>W :set invwrap<CR>
+
+" Open terminals
+nnoremap <leader>vt :vertical terminal<CR>
+nnoremap <leader>ht :terminal<CR>
 
 " Transparency
 let t:is_transparent = 0
@@ -184,7 +200,6 @@ endfunction
 
 nnoremap <leader>tr :call Toggle_Transparency()<CR>
 
-
 " =========================================================================================
 " Gvim config
 " =========================================================================================
@@ -192,5 +207,7 @@ if has('gui_running')
 	set guifont=Monospace\ 14
 	set background=dark
 	colorscheme industry
+    set belloff=all
+    inoremap <C-S-v> <C-r>+
 endif
 
