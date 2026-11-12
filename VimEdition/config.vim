@@ -47,10 +47,10 @@ set hlsearch
 set ignorecase
 set smartcase
 
-"Configuracion del cursor en los modos
-let &t_EI = "\e[2 q"   " Normal => bloque
-let &t_SI = "\e[6 q"   " Insert => b barra vertical
-let &t_SR = "\e[4 q"   " Replace => subrayado
+"Cursor
+let &t_EI = "\e[2 q" " Normal  => block
+let &t_SI = "\e[6 q" " Insert  => vertical bar
+let &t_SR = "\e[4 q" " Replace => underscore
 
 " Mapleader
 let mapleader=" "
