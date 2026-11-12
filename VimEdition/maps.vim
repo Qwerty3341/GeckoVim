@@ -164,4 +164,5 @@ endfunction
 nnoremap <leader>tr :call Toggle_Transparency()<CR>
 
 command! Retab set noexpandtab | %retab!
-
+command! Respace set expandtab | %retab!
+command! ToggleTabs set expandtab! | %retab! | set expandtab?
