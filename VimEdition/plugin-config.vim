@@ -172,6 +172,8 @@ augroup IndentLineTerminal
   autocmd FileType floaterm setlocal conceallevel=0
 augroup END
 
+let g:indentLine_conceallevel = 1
+
 " =============
 " Easymotion
 " =============
@@ -211,7 +213,7 @@ nnoremap <silent> <leader>f :Files<CR>
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_json_syntax_conceal = 0
-let g:indentLine_conceallevel = 1
+let g:polyglot_disabled = ['autoindent']
 
 " =============
 " Hexokinase
