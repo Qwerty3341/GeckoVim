@@ -1,8 +1,8 @@
 return {
-	"silentium-theme/silentium.nvim",
-	lazy= false,
-	priority = 1000,
-	config = function()
-		vim.cmd.colorscheme("silentium")
-	end,
+  "silentium-theme/silentium.nvim",
+  lazy= false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme("silentium")
+  end,
 }
