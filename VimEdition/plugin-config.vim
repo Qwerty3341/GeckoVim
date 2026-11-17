@@ -87,6 +87,28 @@ augroup END
 " Uncomment this if instead NERDTree you want to use coc-explorer
 " nnoremap <leader>e <Cmd>CocCommand explorer<CR>
 
+" ==============
+" Coc and macros
+" ==============
+
+function! s:CocMacroMode() abort
+  let l:macro = reg_recording() !=# '' || reg_executing() !=# ''
+  if get(g:, 'coc_macro_mode', 0) == l:macro
+    return
+  endif
+  let g:coc_macro_mode = l:macro
+  if l:macro
+    silent! CocDisable
+  else
+    silent! CocEnable
+  endif
+endfunction
+
+augroup CocMacroRecording
+  autocmd!
+  autocmd InsertEnter,CursorMoved,CursorHold * call s:CocMacroMode()
+augroup END
+
 " =============
 " NERDTree
 " =============
