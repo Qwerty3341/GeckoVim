@@ -6,6 +6,8 @@ set nobackup
 set nowritebackup
 set signcolumn=yes
 
+hi link CocInlayHint CocHintSign
+
 nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
