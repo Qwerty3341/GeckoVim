@@ -28,35 +28,29 @@ It is highly recommended to install **gVim** for shared clipboard, which also in
 
 ##### Linux
 
-**Debian / Ubuntu**
-
 ```bash
+# Debian / Ubuntu
+
 sudo apt update && sudo apt install vim-gtk3
-```
 
-**Arch Linux**
+# Arch Linux
 
-```bash
 sudo pacman -S gvim
-```
 
-**Fedora**
+# Fedora
 
-```bash
 sudo dnf install vim-enhanced
 ```
 
 ##### macOS
 
-**MacVim (GUI, with shared clipboard)**
-
 ```bash
+# MacVim (GUI, with shared clipboard)**
+
 brew install macvim
-```
 
-**Only terminal vim**
+# Only terminal vim
 
-```bash
 brew install vim
 ```
 
@@ -80,7 +74,7 @@ Go to the link
 
 Required for **coc.nvim** (IntelliSense, linting, etc.).
 
-Install it from the official site (Recommended): [https://nodejs.org/es/download](https://nodejs.org/es/download)
+Install it from the official site: [https://nodejs.org/es/download](https://nodejs.org/es/download)
 
 Or using your package manager:
 
@@ -88,14 +82,10 @@ Or using your package manager:
 ```bash
 # Debian / Ubuntu
 sudo apt install nodejs npm
-```
 
-```bash
 # Arch Linux
 sudo pacman -S nodejs npm
-```
 
-```bash
 # Fedora
 sudo dnf install nodejs npm
 ```
@@ -117,21 +107,14 @@ If you prefer hexokinase, uncomment that line in `~/.vim/plugins.vim` and instal
 
 ##### Linux
 
-**Arch Linux**
-
 ```bash
+# Arch Linux
 sudo pacman -S go make
-```
 
-**Debian / Ubuntu**
-
-```bash
+# Debian / Ubuntu**
 sudo apt install golang-go make
-```
 
-**Fedora**
-
-```bash
+# Fedora
 sudo dnf install golang make
 ```
 
@@ -140,11 +123,9 @@ sudo dnf install golang make
 ```bash
 brew install go
 xcode-select --install # provides make (no operation if already installed)
-```
 
-Or, if you prefer GNU make from Homebrew (installed as `gmake`):
+# Or, if you prefer GNU make from Homebrew (installed as `gmake`):
 
-```bash
 brew install make
 ```
 
