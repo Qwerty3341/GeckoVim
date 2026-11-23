@@ -68,6 +68,8 @@ so ~/.vim/maps.vim
 " Theme
 set background=dark
 colorscheme retrobox
+hi link CocInlayHint CocHintSign
+
 " highlight Normal guibg=#000000
 " highlight Normal cterm=None
 " highlight CursorLine guibg=#0d090c ctermbg=234
